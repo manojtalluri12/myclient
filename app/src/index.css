@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+.g{
+  width: 1250px;
+  height: 400px;
+}
+body{/*
+  height: 100vh;
+  background: linear-gradient(45deg,
+  rgba(0, 0, 0, 0.75),
+  rgba(0, 0, 0, 0.1)), 
+    url(
+'https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg?auto=compress&cs=tinysrgb&w=600');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;*/
+}
+.items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 5px 0px #aeaeae;
+  padding: 10px;
+  margin: 10px;
+}
+select{
+  padding: 10px;
+  margin: 10px;
+}
+.flex{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+button{
+  text-align: center;
+  border: none;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+  place-items: center;
+}
+.imgs{
+  width: 200px;
+  height: 200px;
+}
+.link{
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px 0px #aeaeae;
+  background:linear-gradient(45deg,
+                    rgba(245, 70, 66, 0.75),
+                    rgba(8, 83, 156, 0.75)), 
+                      url(
+'https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+.navleft{
+  padding: 10px;
+  margin: 10px;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+}
+button{
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: linear-gradient(45deg,
+  rgba(0, 0, 0, 0.75),
+  rgba(0, 0, 0, 0.1)), 
+    url(
+'https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.navright{
+  padding: 10px;
+  margin: 10px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-size: 20px;
+}
+
+@media (max-width:991px) {
+  
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+}
+.navright {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.menu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-size: 20px;
+}
+.active{
+  display: none;
+}
+}
